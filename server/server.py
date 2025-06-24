@@ -3,6 +3,9 @@ import util
 
 app = Flask(__name__)
 
+util.load_saved_artifacts()  # Load the model and data columns before starting the server
+
+
 @app.route('/hello')
 def hello():
     return "Hello, World!"
@@ -34,5 +37,4 @@ def predict_home_price():
 
 if __name__ == '__main__':
     print("Starting the Flask server...")
-    util.load_saved_artifacts()  # Load the model and data columns before starting the server
-    app.run()
+    app.run(debug=True)
