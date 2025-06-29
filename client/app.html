@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Banglore Home Price Prediction</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
 	<link rel="stylesheet" href="app.css">
 </head>
@@ -11,7 +11,6 @@
 <form class="form">
 	<h2>Area (Square Feet)</h2>
     <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
-	
 	<h2>BHK</h2>
 	<div class="switch-field">
 		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
@@ -44,8 +43,8 @@
 	<div>
   <select class="location" name="" id="uiLocations">
     <option value="" disabled="disabled" selected="selected">Choose a Location</option>
-		<option>Electronic City</option>
-        <option>Rajaji Nagar</option>
+		<!-- <option>Electronic City</option>
+        <option>Rajaji Nagar</option> -->
   </select>
 </div>
 	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
